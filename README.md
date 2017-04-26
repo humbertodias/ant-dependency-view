@@ -35,7 +35,7 @@ ant
 
 build.png and build.pdf
 
-![Preview](doc/build.png)
+![Preview](build.png)
 
 # References
 
