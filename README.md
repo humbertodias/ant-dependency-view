@@ -33,9 +33,9 @@ ant
 
 # Output
 
-	build.png and build.pdf
+build.png and build.pdf
 
-	![Preview](doc/build.png)
+![Preview](doc/build.png)
 
 # References
 
