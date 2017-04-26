@@ -19,11 +19,17 @@
 	    <typedef resource="net/ggtools/grand/antlib.xml" classpath="${basedir}/lib/grand-1.9.5.jar" />
 	        <grand output="build.dot" buildfile="${basedir}/build.xml" />
 			<exec executable="dot">
-			  <arg line="-Tpdf -Gsize=11.69,8.27 -Grotate=90 -o build.pdf ${basedir}/build.dot" />
+			  <arg line="-Tpdf -Gsize=8.27,11.69 -o build.pdf ${basedir}/build.dot" />
 			</exec>
 			<exec executable="dot">
-			  <arg line="-Tpng -Gsize=11.69,8.27 -Grotate=90 -o build.png ${basedir}/build.dot" />
+			  <arg line="-Tpng -Gsize=8.27,11.69 -o build.png ${basedir}/build.dot" />
 			</exec>
+	</target>
+
+	<target name="clean">
+		<delete file="build.dot"/>
+		<delete file="build.pdf"/>
+		<delete file="build.png"/>
 	</target>
 
 </project>

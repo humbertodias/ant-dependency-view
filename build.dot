@@ -6,6 +6,8 @@ edge [fontsize="10"];
 
 "A"
 
+"clean"
+
 "C"
 "C" -> "B";
 
