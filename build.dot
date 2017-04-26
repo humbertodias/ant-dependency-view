@@ -1,0 +1,15 @@
+digraph "null" {
+graph [rankdir="LR"];
+node [fontsize="12"];
+edge [fontsize="10"];
+"grandAntDiagram" [shape=octagon,fillcolor="yellow",style="filled,bold",fontname="Helvetica-Bold"];
+
+"A"
+
+"C"
+"C" -> "B";
+
+"B"
+"B" -> "A";
+
+}

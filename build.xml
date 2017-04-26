@@ -1,0 +1,28 @@
+<project default="grandAntDiagram">
+
+<target name="A">
+	<echo>A</echo>
+</target>
+
+
+<target name="B" depends="A">
+	<echo>B</echo>
+</target>
+
+
+<target name="C" depends="B">
+	<echo>C</echo>
+</target>
+
+<!-- https://ant-grand.github.io/Grand/grand.html#Examples -->
+<target name="grandAntDiagram">
+    <typedef resource="net/ggtools/grand/antlib.xml" classpath="${basedir}/lib/grand-1.9.5.jar" />
+        <grand output="build.dot" buildfile="${basedir}/build.xml" />
+		<exec executable="dot">
+		  <arg line="-Tpng -Gsize=11.69,8.27 -Grotate=90 -o build.pdf ${basedir}/build.dot" />
+		</exec>
+</target>
+
+
+
+</project>
